@@ -9,14 +9,27 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   /*your style rules go in here */
+  background-color: seashell;
+  font-size: smaller;
 }
 
 header {
+border: 1px solid rgb(89, 12, 12);
+background-color: rgb(89, 12, 12);
+color: seashell;
+}
 
+h1{
+  text-align: center;
 }
 
 main {
-
+width: 80%;
+max-width: 700px;
+margin: 12px auto 12px auto;
+background-color: white;
+padding: 2em;
+position: relative;
 }
 
 section {
@@ -25,9 +38,88 @@ section {
 
 
 figure {
- 
+ width: 45%;
+ margin: 0 auto;
+ float:right;
+ margin-left: 10px;
+ margin-bottom: 10px;
 }
 
+img{
+display:block;
+width: 100%;
+}
+
+.info{
+  display: block;
+}
+
+p {
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+ul {
+  margin: .5em 1em;
+  list-style-position: inside;
+}
+
+li{
+  margin-bottom: 1em;
+}
+
+.Performed, .Printed {
+  color: rgb(89, 12, 12);
+  font-weight: bold;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  text-align:right;
+}
+
+.quote {
+  font-style:italic;
+  font-size: larger;
+  margin-top: 10px;
+}
+
+
+
 footer {
+text-align: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+color: seashell;
+background:rgb(89, 12, 12);
+height: 2em;
+}
+
+.playlink {
+  clear:both;
+  text-align: center;
+}
+
+.playlink a {
+  color: white;
+  background-color: rgb(89, 12, 12);
+  text-decoration: none; 
+ }
+
+@media (max-width: 600px) {
+
+  figure {
+    width: 80%;
+    margin: 0 auto;
+    float:none;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   }
+
+   main {
+    width:100%;
+    margin-left: 0;
+    margin-right: 0;
+   }
 
 }
