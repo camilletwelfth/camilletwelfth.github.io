@@ -1,0 +1,401 @@
+/* This stylesheet will be selected when you export HTML from InDesign */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 45px;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*your style rules go in here */
+  scroll-padding-top: 340px;
+}
+
+
+section {
+  border: 0;
+}
+
+.playtitle {
+  text-align: center;
+  font-size: 56px;
+  padding-top: 6px;
+  font-weight: bold;
+  font-family: 'Abril Fatface';
+}
+
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+.dramatis {
+  text-align: center;
+  border: solid;
+  padding: 8px;
+  width: 500px;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+.play {
+margin: auto;
+width: 70%;
+}
+
+.video-box {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.video-box iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img {
+width: 50%;
+height: auto;
+margin-right: auto;
+margin-left: auto;
+display: table;
+}
+
+.act {
+text-align: center;
+font-family: 'Abril Fatface', Georgia, 'Times New Roman', Times, serif;
+font-size: 40px;
+background-color: rgb(89,12,12);
+color: white;
+margin-bottom: 10px;
+}
+
+.character {
+font-weight: bold;
+margin-left: 12px;
+font-size: 18px;
+}
+
+.charactername {
+font-size: 16px;
+font-weight: bold;
+}
+
+.dramatishead {
+
+}
+
+.location {
+font-size: 18px;
+font-style:italic;
+text-align: end;
+margin-right: 12px;
+}
+
+.play_location {
+padding-top: 10px;
+font-style: italic;
+font-weight: bold;
+}
+
+.firstscene {
+text-align: center;
+font-size: 25px;
+color: rgb(89,12,12);
+}
+
+.scene {
+text-align: center;
+font-size: 25px;
+color: rgb(89,12,12);
+}
+.song {
+
+}
+.stagedirection {
+  font-size: 18px;
+  font-style:italic;
+  text-align: end;
+  margin-right: 12px;
+  padding: 5px;
+}
+
+.sceneImage {
+  text-align: center;
+  font-style:italic;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.verseline {
+  margin: 0 0 0.4em 8em;
+  font-size: 16px;
+}
+
+.prose {
+  margin: 0 0 0.4em 8em;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.character_role {
+font-size: 15px;
+font-weight: lighter;
+}
+
+.inlinestagedirections {
+  font-style: italic;
+}
+
+nav {
+  background-color: rgb(89,12,12);
+  font-size: 12px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  margin: 0.5rem 0;
+  display: block;
+  color: white;
+}
+
+nav ul li:hover {
+  background-color: rgb(152, 50, 44);
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+li ul li a {
+  margin: 0.3rem 0;
+  color: white;
+  font-size: 12px;
+}
+
+li.home {
+  flex: 1 0 auto;
+  text-align: center;
+  padding-left: 30px;
+  margin-right: 0;
+}
+
+li ul {
+  display:none;
+}
+
+nav ul li:hover ul {
+display:flex;
+flex-direction: column;
+background-color: rgb(152, 50, 44);
+}
+
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.end {
+  text-align: center;
+  color: white;
+  background-color: rgb(89,12,12);
+  font-size: 35px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
+  body {
+    padding-top: 25px;
+  }
+
+  /* h1 a,
+  h2 a {
+    position: absolute;
+    top: -28px;
+  } */
+
+  html {
+    scroll-padding-top: 37px;
+  }
+  
+  li.home {
+    text-align: left;
+    padding-left: 3rem;
+    margin-right: 3rem;
+    flex: 4 1 100px;
+    align-self: flex-start;
+  }
+
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+
+  nav ul li {
+    flex: 0 1 6.5rem;
+  }
+
+  nav ul li ul li {
+    flex: 0 0 2rem;
+  }
+
+  li ul li a {
+    padding: 0.3rem 0;
+  }
+
+  li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(187, 209, 206);
+    width: 6.5rem;
+  }
+
+  li ul li {
+    width: 6.5rem;
+  }
+
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li.home:hover {
+    background: none;
+    background-color: rgb(152, 50, 44)
+  }
+
+  nav ul li.home:hover a {
+    color: black;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  li ul {
+    position: static;
+  }
+
+  nav ul li {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+
+  .dramatis {
+    width: 90%;
+  }
+
+  .playtitle {
+    margin-top: 40px;
+    font-size: 40px;
+  }
+
+  img {
+    width: 70%;
+  }
+
+  .act {
+    font-size: 30px;
+  }
+
+  .scene {
+    font-size: 20px;
+  }
+
+  .firstscene {
+    font-size: 20px;
+  }
+
+  .stagedirection {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .location {
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .character {
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  .verseline {
+    margin: 0 0 0.4em 3em;
+  }
+
+  .prose {
+    margin: 0 0 0.4em 3em;
+  }
+
+  .play {
+    width: 90%;
+  }
+
+
+}
