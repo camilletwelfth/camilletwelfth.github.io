@@ -93,6 +93,10 @@ iframe {
   display:block;
   margin:auto;
   margin-bottom: 20px;
+  border: none;
+  border-radius:12px;
+  width:75%;
+  /* height: auto; */
   }
 
 .music {
